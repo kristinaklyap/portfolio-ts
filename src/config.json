@@ -162,6 +162,10 @@
         "pageNo": "03",
         "pageTitle": "Portfolio"
       }
+    },
+    "not_found": {
+      "title": "404 - Not found",
+      "content": "Sorry, there is no page you are looking for :("
     }
   }
 }
