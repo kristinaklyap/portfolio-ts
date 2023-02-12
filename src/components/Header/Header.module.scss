@@ -1,0 +1,92 @@
+@use './src/styles/fonts';
+@use './src/styles/colors';
+@use './src/styles/breakpoints' as bp;
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+
+  .logo_container {
+    font-size: fonts.$h2;
+
+    span {
+      display: block;
+      color: colors.$primary;
+    }
+  }
+
+  .nav_container {
+    a {
+      font-size: fonts.$h4;
+      color: colors.$primary;
+      padding: 10px 33px;
+      position: relative;
+      transition: ease .3s;
+
+
+      &:after {
+        content: '';
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100px;
+        height: 2px;
+        background-color: transparent;
+        bottom: 0;
+        transition: ease .3s;
+
+      }
+
+      &.active {
+        &:after {
+          background-color: colors.$primary;
+        }
+      }
+
+      &:last-of-type {
+        padding-right: 0;
+
+        &:after {
+          transform: translateX(calc(-50% + 15px));
+        }
+      }
+
+      &:hover {
+        color: colors.$secondary;
+
+        &:after {
+          background-color: colors.$secondary;
+        }
+      }
+    }
+  }
+
+  @media screen and (max-width: bp.$mobileBreakpoint) {
+    .logo_container {
+
+      span {
+        font-size: fonts.$h2_mobile;
+        line-height: 1em;
+      }
+    }
+    .nav_container {
+      a {
+        font-size: .8em;
+        padding: 10px;
+        &:after {
+          width: 40px;
+        }
+        &:last-of-type {
+          &:after {
+            transform: translateX(calc(-50% + 5.5px));
+          }
+        }
+      }
+    }
+  }
+}
