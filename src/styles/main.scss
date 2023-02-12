@@ -1,0 +1,94 @@
+@use './src/styles/fonts';
+@use './src/styles/colors';
+@use './src/styles/breakpoints' as bp;
+@import "reset";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;700&display=swap');
+
+$contentWidth: 1200px;
+$contentWidthMd: 85%;
+
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: fonts.$p;
+  color: colors.$primary;
+  background-color: colors.$tertiary;
+  overflow: hidden;
+  @media screen and (max-width: bp.$desktopBreakpoint) {
+    overflow-y: scroll;
+  }
+}
+
+.container {
+  width: min(100%, $contentWidth);
+  margin-inline: auto;
+  position: relative;
+  transform: scale(1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  @media screen and (max-width: bp.$largeDesktop) {
+    width: min(100%, $contentWidthMd);
+    padding: 100px 0;
+
+  }
+  @media screen and (max-width: bp.$mediumMobileBreakpoint) {
+    width: calc(100vw - 20px);
+    padding: 80px 0;
+  }
+}
+
+p, a {
+  line-height: 29px;
+  color: colors.$primary;
+}
+
+a {
+  transition: ease .3s;
+
+  &:hover {
+    color: colors.$secondary;
+  }
+}
+
+h1 {
+  font-size: fonts.$h1;
+  line-height: 1em;
+  font-weight: 200;
+  @media screen and (max-width: bp.$mediumMobileBreakpoint) {
+    font-size: fonts.$h1_mobile;
+
+  }
+}
+
+h2 {
+  font-size: fonts.$h2;
+  line-height: 1em;
+  font-weight: 200;
+}
+
+h3 {
+  font-size: fonts.$h3;
+  line-height: 1em;
+  font-weight: 200;
+}
+
+h4 {
+  font-size: fonts.$h4;
+  line-height: 1em;
+  font-weight: 200;
+}
+
+h5 {
+  font-size: fonts.$h5;
+  line-height: 1em;
+  font-weight: 200;
+}
+
+h6 {
+  font-size: fonts.$h6;
+  line-height: 1em;
+  font-weight: 200;
+}

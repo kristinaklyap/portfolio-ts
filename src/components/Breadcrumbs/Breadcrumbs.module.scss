@@ -1,0 +1,38 @@
+@use './src/styles/fonts';
+@use './src/styles/colors';
+@use './src/styles/breakpoints' as bp;
+
+.breadcrumbs {
+  position: absolute;
+  bottom: 35px;
+  display: flex;
+  align-items: center;
+
+  .text {
+    font-size: fonts.$h4;
+    font-weight: 200;
+    color: colors.$secondary;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+
+  .line {
+    background-color: colors.$secondary;
+    height: 1px;
+    width: 80px;
+    display: block;
+    margin: 0 15px;
+  }
+
+  @media screen and (max-width: bp.$mediumMobileBreakpoint) {
+    bottom: 20px;
+    left: 0;
+    .text {
+      font-size: fonts.$disclaimer;
+    }
+    .line {
+      width: 30px;
+    }
+  }
+
+}
