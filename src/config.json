@@ -1,0 +1,167 @@
+{
+  "header": {
+    "author": "Name Surname",
+    "nav_items": [
+      {
+        "title": "about",
+        "url": "/about"
+      },
+      {
+        "title": "portfolio",
+        "url": "/portfolio"
+      }
+    ]
+  },
+  "socials": [
+    {
+      "brand": "mail",
+      "url": "example@gmail.com"
+    },
+    {
+      "brand": "linkedin",
+      "url": "http://yoururl.com"
+    },
+    {
+      "brand": "github",
+      "url": "http://yoururl.com"
+    }
+  ],
+  "page_order": {
+    "0": "/",
+    "1": "/about",
+    "2": "/portfolio"
+  },
+  "pages": {
+    "intro": {
+      "title": "Hi, I'm Name!",
+      "content": "Lorem ipsum dolor sit amet. Qui voluptatem quae et quia consectetur vel magnam veritatis.",
+      "breadcrumbs": {
+        "pageNo": "01",
+        "pageTitle": "Introduce"
+      }
+    },
+    "about": {
+      "title": "I am a Web Developer",
+      "cv": {
+        "title": "Download CV",
+        "file": "cv.pdf"
+      },
+      "blocks": [
+        {
+          "title": "Backend:",
+          "content": "PHP, NodeJS"
+        },
+        {
+          "title": "Frontend:",
+          "content": "JavaScript (ES6), ReactJS, TypeScript, CSS(SCSS)"
+        },
+        {
+          "title": "CMS: ",
+          "content": "AEM, WordPress, (+ Woocommerce)"
+        },
+        {
+          "title": "Tests: ",
+          "content": "Jest, Mocha, react-testing-library"
+        },
+        {
+          "title": "+",
+          "content": "Adobe (Photoshop, Illustrator, Xd), Sketch,\nAttlassian software (Jira, Confluence&Bitbucket), \nGithub, Storybook"
+        }
+      ],
+      "breadcrumbs": {
+        "pageNo": "02",
+        "pageTitle": "About"
+      }
+    },
+    "portfolio": {
+      "projects": [
+        {
+          "image": "project_1.png",
+          "title": "UI Kit",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_3.png",
+          "title": "Portfolio page",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop3",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop4",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop4",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop4",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop4",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }, {
+          "image": "project_2.png",
+          "title": "Balu Shop4",
+          "description": "Lorem ipsum dolor sit amet. Non illo molestias et itaque \nquidem quo accusantium Quis. Et nulla vitae eos iusto \nmolestiae quo rerum doloribus hic dolores praesentium \net veritatis voluptates sed sequi ipsa.",
+          "tech_stack": "ReactJS, CSS Modules (SCSS), Storybook, Jest",
+          "urls": {
+            "live": "https://github.com/kristinaklyap/ui-kit/",
+            "code": "https://kristinaklyap.github.io/ui-kit/"
+          }
+        }
+      ],
+      "breadcrumbs": {
+        "pageNo": "03",
+        "pageTitle": "Portfolio"
+      }
+    }
+  }
+}
