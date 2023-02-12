@@ -12,8 +12,8 @@ const Header = () => {
     const [isNavActive, setIsNavActive] = useState<boolean>(false)
     const handleBtnClick = () => setIsNavActive(!isNavActive)
 
-    const navItems: NavItem[] = config.header?.nav_items;
-    const author:string = config.header?.author
+    const navItems: NavItem[] = config.header?.nav_items
+    const author: string = config.header?.author
 
     return (
         <header className={classes.header}>

@@ -2,7 +2,11 @@ import {Link} from "react-router-dom";
 import {ProjectItem} from "../../models/ProjectItem"
 import classes from "./Projects.module.scss";
 
-const Projects: React.FC<{ projects: ProjectItem[] }> = ({projects}) => {
+interface ProjectsProps {
+    projects: ProjectItem[]
+}
+
+const Projects: React.FC<ProjectsProps> = ({projects}) => {
     return (
         <div className={classes.projects}>
             {projects && projects.map(({image}: ProjectItem, index: number) => {
