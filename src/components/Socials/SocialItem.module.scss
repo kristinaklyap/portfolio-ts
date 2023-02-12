@@ -1,0 +1,20 @@
+.socialItem {
+  width: 30px;
+  height: 30px;
+  margin: 12px 0;
+  background-repeat: no-repeat;
+  background-size: contain;
+  font-size: 0;
+  display: block;
+  &.github {
+    background-image: url('../../assets/brands/github.svg');
+  }
+
+  &.mail {
+    background-image: url('../../assets/brands/mail.svg');
+  }
+
+  &.linkedin {
+    background-image: url('../../assets/brands/linkedin.svg');
+  }
+}
