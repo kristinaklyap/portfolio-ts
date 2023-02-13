@@ -1,4 +1,4 @@
-export interface ProjectItem {
+export interface ProjectInterface {
     image: string;
     title: string;
     description: string;
@@ -7,5 +7,4 @@ export interface ProjectItem {
         live: string;
         code: string;
     }
-
 }
