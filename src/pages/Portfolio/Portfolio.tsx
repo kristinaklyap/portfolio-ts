@@ -5,12 +5,12 @@ import config from "../../config.json";
 import Projects from "../../components/Projects/Projects";
 import Pagination from "../../components/Pagination/Pagination";
 import Breadcrumbs from "../../components/Breadcrumbs/Breadcrumbs";
-import {ProjectItem} from "../../models/ProjectItem";
+import {ProjectInterface} from "../../models/ProjectInterface";
 import {BreadcrumbsInterface} from "../../models/Breadcrumbs";
 import classes from "./Portfolio.module.scss"
 
 interface PortfolioProps {
-    projects: ProjectItem[];
+    projects: ProjectInterface[];
     breadcrumbs?: BreadcrumbsInterface
 }
 
