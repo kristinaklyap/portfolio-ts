@@ -1,0 +1,9 @@
+@use './src/styles/breakpoints' as bp;
+
+.portfolio {
+  display: flex;
+
+  @media screen and (max-width: bp.$mediumMobileBreakpoint) {
+    justify-content: center;
+  }
+}

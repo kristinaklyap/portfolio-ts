@@ -1,21 +1,26 @@
-import './App.scss';
-import Breadcrumbs from "./components/Breadcrumbs/Breadcrumbs";
+import {Route, Routes} from "react-router-dom";
+
+import Portfolio from "./pages/Portfolio/Portfolio";
 import Header from "./components/Header/Header";
 import Socials from "./components/Socials/Socials";
-import Projects from "./components/Projects/Projects";
-import config from "./config.json";
-import {ProjectItem} from "./models/ProjectItem"
+
+import './App.scss';
 
 function App() {
 
-    const projectsData: ProjectItem[] = config.pages.portfolio?.projects
     return (
         <div className="App">
             <div className="container">
                 <Header/>
                 <Socials/>
-                <Breadcrumbs pageNo={"01"} pageTitle={"Custom Title"}/>
-                <Projects projects={projectsData}/>
+                <Routes>
+                    {/*<Route index path="/" element={<Intro data={config.pages.intro}/>}/>*/}
+                    {/*<Route path="/about" element={<About data={config.pages?.about}/>}/>*/}
+                    <Route path="/portfolio" element={<Portfolio />}/>
+                    {/*<Route path={"/portfolio/:projectID"} element={<Project />}/>*/}
+                    {/*<Route path=":pageSlug" element={<GenericPage />}/>*/}
+                </Routes>
+
             </div>
         </div>
     );
