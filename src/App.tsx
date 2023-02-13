@@ -1,6 +1,8 @@
 import {Route, Routes} from "react-router-dom";
 
 import Portfolio from "./pages/Portfolio/Portfolio";
+import Intro from "./pages/Intro/Intro";
+
 import Header from "./components/Header/Header";
 import Socials from "./components/Socials/Socials";
 
@@ -14,7 +16,7 @@ function App() {
                 <Header/>
                 <Socials/>
                 <Routes>
-                    {/*<Route index path="/" element={<Intro data={config.pages.intro}/>}/>*/}
+                    <Route index path="/" element={<Intro />}/>
                     {/*<Route path="/about" element={<About data={config.pages?.about}/>}/>*/}
                     <Route path="/portfolio" element={<Portfolio />}/>
                     {/*<Route path={"/portfolio/:projectID"} element={<Project />}/>*/}
