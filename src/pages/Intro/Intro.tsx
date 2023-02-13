@@ -6,7 +6,7 @@ import {BreadcrumbsInterface} from "../../models/Breadcrumbs";
 
 interface IntroProps {
     title: string;
-    content: string;
+    content?: string;
     breadcrumbs: BreadcrumbsInterface
 
 }

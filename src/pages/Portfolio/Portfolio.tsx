@@ -11,7 +11,7 @@ import classes from "./Portfolio.module.scss"
 
 interface PortfolioProps {
     projects: ProjectItem[];
-    breadcrumbs: BreadcrumbsInterface
+    breadcrumbs?: BreadcrumbsInterface
 }
 
 const Portfolio = () => {
