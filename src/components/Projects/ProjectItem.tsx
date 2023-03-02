@@ -4,11 +4,11 @@ import Breadcrumbs from "../Breadcrumbs/Breadcrumbs";
 
 import classes from "../../pages/Project/Project.module.scss";
 
-const ProjectItem: React.FC<{project_id: number }> = ({project_id}) => {
+const ProjectItem: React.FC<{ project_id: number }> = ({project_id}) => {
     const {title, image, urls, tech_stack, description}: ProjectInterface = config.pages.portfolio.projects[project_id]
-    const imgSrc:string = image && require(`/src/assets/portfolio/${image}`);
+    const imgSrc: string = image && require(`/src/assets/portfolio/${image}`);
 
-    return(
+    return (
         <div>
             <div className={classes.project}>
                 <div className={classes.content}>
@@ -22,11 +22,13 @@ const ProjectItem: React.FC<{project_id: number }> = ({project_id}) => {
                     </div>
 
                     <div className={classes.block}>
-                        <h4>Links</h4>
-                        <div>Code: <a href={urls.code} target={"_blank"}>{urls.code}</a>
-                        </div>
-                        <div>Live: <a href={urls.live}
-                                      target={"_blank"}>{urls.live}</a></div>
+                        {(urls.code || urls.live) && <h4>Links</h4>}
+                        {urls.code &&
+                            <div>Code: <a href={urls.code} target={"_blank"}>{urls.code}</a></div>
+                        }
+                        {urls.live &&
+                            <div>Live: <a href={urls.live} target={"_blank"}>{urls.live}</a></div>
+                        }
                     </div>
 
                 </div>
