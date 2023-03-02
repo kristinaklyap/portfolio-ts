@@ -3,17 +3,19 @@ import {ProjectInterface} from "../../models/ProjectInterface"
 import classes from "./Projects.module.scss";
 
 interface ProjectsProps {
-    projects: ProjectInterface[]
+    projects: ProjectInterface[];
+    indexOfFirstPost: number;
 }
 
-const Projects: React.FC<ProjectsProps> = ({projects}) => {
+const Projects: React.FC<ProjectsProps> = ({projects, indexOfFirstPost}) => {
     return (
         <div className={classes.projects}>
             {projects && projects.map(({image}: ProjectInterface, index: number) => {
+                const currentProjectId = indexOfFirstPost + index
                 const imgSrc: string = require(`/src/assets/portfolio/${image}`);
                 return (
                     <div key={index}>
-                        <Link to={`/portfolio/${index}`}>
+                        <Link to={`/portfolio/${currentProjectId}`}>
                             <img src={imgSrc}/>
                         </Link>
                     </div>

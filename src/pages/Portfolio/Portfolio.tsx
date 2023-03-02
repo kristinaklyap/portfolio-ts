@@ -58,7 +58,7 @@ const Portfolio = () => {
         <div className={classes.portfolio}>
             {
                 projects && <div className={classes.portolio_container} {...handleTouch}>
-                    <Projects projects={currentPosts}/>
+                    <Projects projects={currentPosts} indexOfFirstPost={indexOfFirstPost}/>
                     <Pagination totalPage={setPageTotal}
                                 paginate={setCurrentPage}
                                 currentPage={currentPage}
